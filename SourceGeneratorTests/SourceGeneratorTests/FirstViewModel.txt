@@ -1,0 +1,38 @@
+﻿using Richy_WPF_MVVM.Common.Navigation;
+using Richy_WPF_MVVM.Common;
+using System.Windows;
+
+namespace Richy_WPF_MVVM.User.ViewModels
+{
+    public partial class FirstViewModel : ViewModelBase
+    {
+        private NavigationService NavigationService { get; }
+
+        public FirstViewModel(NavigationService navigationService)
+        {
+            NavigationService = navigationService;
+        }
+
+        [MAVIS_Property]
+        string message = "First View Model";
+
+        [MAVIS_Method]
+        public void ShowMessage()
+        {
+            NavigationService.ShowDialog("Click a button", "Richy Popup", MessageBoxButton.YesNoCancel, MessageBoxImage.Hand, MessageBoxResult.Yes, DialogClosed);
+
+        }
+
+
+        [MAVIS_Property]
+        string message1 = "First View Model 1";
+
+        private void DialogClosed(DialogResultEvent e)
+        {
+            //if (e.Result == MessageBoxResult.None) Message = "The dialog was closed without the button";
+            //if (e.Result==MessageBoxResult.Yes) Message = "The user clicked Yes";
+            //if (e.Result==MessageBoxResult.No) Message = "The user clicked No";
+        }
+
+    }
+}

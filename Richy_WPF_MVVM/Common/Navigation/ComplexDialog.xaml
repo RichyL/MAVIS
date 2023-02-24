@@ -1,0 +1,13 @@
+﻿<Window x:Class="Richy_WPF_MVVM.Common.Navigation.ComplexDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Richy_WPF_MVVM.Common.Navigation"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner" d:DesignHeight="100" d:DesignWidth="300"
+        >
+    <UserControl x:Name="ComplexDialogContent" />
+
+</Window>

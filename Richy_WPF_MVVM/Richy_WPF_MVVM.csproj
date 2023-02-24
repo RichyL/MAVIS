@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <ProjectReference Include="..\MAVIS_Source_Generators\MAVIS_Source_Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <Compile Update="Common\Navigation\ComplexDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="User\Views\FirstView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+
+
+</Project>
